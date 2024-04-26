@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+  .wrapper {
+    display: table;
+    height: 100%;
+  }
+  .content {
+    display:block;
+    height: 100%;
+  }
+
+
+
+thead{
+    color:white;
+    background-color: RGB(170, 33, 53);
+    text-align: center;
+
+  }
+
+  table{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+  #FAuthor{
+  
+    height: 500px;
+    width: 700px;
+  }
+
+ 
+  #To-do_body{
+background-color: cornsilk!important;
+  }
+  #To-do_Container{
+margin-top: 50px;
+
+  }
+
+  #To-do_Form{
+    background-color: rgb(204, 225, 12);
+    border: 2px,solid,black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 80%;
+  }
+
+  #task{
+    width: 80%;
+    float: left;
+    margin-right: 5px;
+  }
+
+  #mainImage{
+    width: 100%;
+    height: 337px;
+    /* background-image: url(../Img/PortalBesk.jpg); */
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+
+  #carouselImg
+  {
+    width: 100%;
+    height: 400px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  header{
+    background-color: white;
+  }
