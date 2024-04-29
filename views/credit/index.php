@@ -106,7 +106,7 @@ exit;
 <div class="col-8">
 <table class="table table-hover">
   <thead>
-    <tr>
+    <tr class="text-center">
       <th scope="col">#</th>
       <th scope="col">Остаток долга</th>
       <th scope="col">Начисление %</th>
@@ -116,7 +116,7 @@ exit;
   </thead>
   <tbody>
     <?php    for ($i=0;$i<$credit->getTerm();$i++): ?>
-    <tr>
+    <tr class="text-center">
       <th scope="row"><?php echo $i+1 ?></th>
       <td><?php echo $schiduleList["credit"][$i] ?></td>
 

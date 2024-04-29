@@ -44,15 +44,19 @@ class funCredit
             $paymentPercent = 0;
             $paymentMain = 0;
             $payment = round($this->getMounthPayment(),2);
+
+            $creditTotal = $this->sum;
+
             for ($i = 0; $i < $this->term; $i++) {
-                $credit = $credit - $payment;
-                $paymentPercent = round( ($credit * $this->mounthPercent),2);
-                $paymentMain = round(($payment - ($credit * $this->mounthPercent)),2);
-                $this->schiduleList["credit"][] = $credit;
+
+                $paymentPercent = round( ($creditTotal * $this->mounthPercent),2);
+                $paymentMain = round(($payment -$paymentPercent),2);
+                $creditTotal = round(($creditTotal - $paymentMain),2,PHP_ROUND_HALF_DOWN);
+              
+                $this->schiduleList["credit"][] =  round($creditTotal,2,PHP_ROUND_HALF_DOWN);
                 $this->schiduleList["paymentPercent"][] =$paymentPercent;
                 $this->schiduleList["paymentMain"][] = $paymentMain;
                 $this->schiduleList["payment"][] = $payment;
-                
              
             }
             return $this->schiduleList;
